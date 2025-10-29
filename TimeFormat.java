@@ -18,7 +18,9 @@ public class TimeFormat {
 		}
 		else {
 			am_pm = "PM";
-			hours = hours - 12;
+			if ( hours != 12 ) {
+				hours = hours - 12;
+			}
 		}
 		String str_minutes = "";
 		if (minutes < 10) {
